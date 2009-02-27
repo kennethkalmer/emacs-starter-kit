@@ -1,0 +1,3 @@
+[submodule "vendor/egg"]
+	path = vendor/egg
+	url = git://github.com/bogolisk/egg.git
