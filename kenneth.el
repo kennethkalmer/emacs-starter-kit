@@ -12,3 +12,6 @@
 
 ;; egg
 (require 'egg)
+
+;; gist.el
+(require 'gist)
