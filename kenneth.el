@@ -5,6 +5,7 @@
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.god$" . ruby-mode))
 
 ;; Vendor stuff
 (add-to-list 'load-path (concat dotfiles-dir "/vendor/egg"))
@@ -15,3 +16,9 @@
 
 ;; gist.el
 (require 'gist)
+
+;; whitespace handling
+(setq show-trailing-whitespace t)
+(global-set-key "\C-cw" 'delete-trailing-whitespace)
+(setq require-final-newline t)
+
