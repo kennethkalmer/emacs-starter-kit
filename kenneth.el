@@ -10,6 +10,7 @@
 ;; Vendor stuff
 (add-to-list 'load-path (concat dotfiles-dir "/vendor/egg"))
 (add-to-list 'load-path (concat dotfiles-dir "/vendor/gist.el"))
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/relax.el"))
 
 ;; egg
 (require 'egg)
@@ -17,8 +18,11 @@
 ;; gist.el
 (require 'gist)
 
+;; relax.el
+(require 'relax)
+
 ;; whitespace handling
-(setq show-trailing-whitespace t)
+(setq-default show-trailing-whitespace t)
 (global-set-key "\C-cw" 'delete-trailing-whitespace)
 (setq require-final-newline t)
 

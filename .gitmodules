@@ -4,3 +4,6 @@
 [submodule "vendor/gist.el"]
 	path = vendor/gist.el
 	url = git://github.com/defunkt/gist.el
+[submodule "vendor/relax.el"]
+	path = vendor/relax.el
+	url = git://github.com/technomancy/relax.el.git
